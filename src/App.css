@@ -1,0 +1,10 @@
+/* Add any app-specific styles here */
+#home h1 {
+  font-size: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  #home h1 {
+    font-size: 2.5rem;
+  }
+}
