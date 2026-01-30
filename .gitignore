@@ -64,6 +64,14 @@ dist/
 *.log
 logs/
 
+# Docker image files (built locally, should not be committed)
+*.tar
+*.tar.gz
+
+# Logs
+*.log
+logs/
+
 # Misc
 *.bak
 *.tmp
