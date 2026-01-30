@@ -1,0 +1,8 @@
+services:
+  website:
+    image: ${WEBSITE_IMAGE:-ghcr.io/wesense-earth/wesense-website:latest}
+    build: .
+    container_name: wesense-website
+    ports:
+      - "${PORT_WEBSITE:-80}:80"
+    restart: unless-stopped
