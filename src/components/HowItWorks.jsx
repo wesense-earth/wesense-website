@@ -32,7 +32,7 @@ const HowItWorks = () => {
             <Col key={index} md={4} className="d-flex align-items-stretch mb-4">
               <Card className="text-center w-100">
                 <Card.Body>
-                  <div style={{ fontSize: '3rem' }}>{step.icon}</div>
+                  <div style={{ fontSize: '2.5rem' }}>{step.icon}</div>
                   <Card.Title as="h4" className="my-3">{step.title}</Card.Title>
                   <Card.Text>{step.text}</Card.Text>
                 </Card.Body>

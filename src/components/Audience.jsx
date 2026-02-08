@@ -19,18 +19,18 @@ const Audience = () => {
             <ul className="list-unstyled" style={{ fontSize: '1.1rem' }}>
               {audienceItems.map((item, index) => (
                 <li key={index} className="d-flex mb-3">
-                  <span className="me-2">✅</span>
+                  <span className="me-2" style={{ color: 'var(--fern)' }}>✓</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
           </Col>
-          <Col lg={6} className="d-flex flex-column justify-content-center bg-light p-5 rounded">
+          <Col lg={6} className="d-flex flex-column justify-content-center p-5 rounded" style={{ backgroundColor: 'var(--bg-secondary)' }}>
             <h2 className="text-start fw-bold">...Powered by Individuals.</h2>
             <p className="lead">
               While the data is for everyone, the network's unique power comes from you. A research institution can't place a sensor in your bedroom. A city can't map every backyard.
             </p>
-            <p className="lead fw-bold text-primary">
+            <p className="lead fw-bold" style={{ color: 'var(--primary-color)' }}>
               It is the collective action of individuals that solves the hyper-local data problem and creates the ground-truth reality that makes this network invaluable to all.
             </p>
           </Col>

@@ -6,25 +6,25 @@ const waysToContribute = [
     title: 'Contribute a Sensor',
     text: 'The most valuable role. By placing a sensor in your unique environment, you help build the hyper-local, ground-truth data that no one else can provide.',
     buttonText: 'Learn More',
-    variant: 'primary',
+    buttonClass: 'btn-brand',
   },
   {
     title: 'Contribute Code',
     text: 'Are you a developer? We need expertise across the stack, from firmware for new sensors, to backend services, to beautiful frontend visualizations.',
     buttonText: 'View on GitHub',
-    variant: 'outline-dark',
+    buttonClass: 'btn-brand',
   },
   {
     title: 'Contribute Data Science',
     text: 'Help us build the models that will achieve emergent accuracy, uncover hidden environmental trends, and turn raw data into profound insights.',
     buttonText: 'Get in Touch',
-    variant: 'outline-dark',
+    buttonClass: 'btn-brand',
   },
   {
     title: 'Operate a Node',
     text: 'Help strengthen the decentralized IPFS backend by running a node on a Raspberry Pi or home server, ensuring the data remains resilient and permanent.',
     buttonText: 'Read the Docs',
-    variant: 'outline-dark',
+    buttonClass: 'btn-brand',
   },
 ];
 
@@ -43,7 +43,7 @@ const Contribute = () => {
                 <Card.Body className="d-flex flex-column">
                   <Card.Title as="h4">{item.title}</Card.Title>
                   <Card.Text className="flex-grow-1">{item.text}</Card.Text>
-                  <Button variant={item.variant} className="mt-auto align-self-start">{item.buttonText}</Button>
+                  <Button className={`${item.buttonClass} mt-auto align-self-start`}>{item.buttonText}</Button>
                 </Card.Body>
               </Card>
             </Col>

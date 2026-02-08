@@ -1,69 +1,275 @@
+/* ============================================
+   WeSense Brand Tokens
+   Based on BRANDING.md — Canopy Green palette
+   ============================================ */
+
 :root {
-  --primary-color: #0d6efd; /* Bootstrap Blue */
-  --secondary-color: #198754; /* Bootstrap Green */
-  --light-bg: #f8f9fa;
-  --dark-text: #212529;
-  --light-text: #ffffff;
-  --grey-text: #6c757d;
+  /* Primary — Canopy Green */
+  --deep-forest: #1B4332;
+  --canopy: #2D6A4F;
+  --fern: #52B788;
+  --lichen: #B7E4C7;
+  --morning-dew: #E8F5EE;
+
+  /* Secondary — Warm Amber */
+  --dark-honey: #8B6914;
+  --amber: #D4A017;
+  --golden-haze: #F2CC8F;
+
+  /* Tertiary — Slate Teal */
+  --deep-teal: #1E3A3A;
+  --slate-teal: #3D7A7A;
+  --seafoam: #7FB8B2;
+
+  /* Neutrals — Warm Stone */
+  --charcoal: #1A1A18;
+  --dark-stone: #3D3D38;
+  --warm-grey: #8D8478;
+  --pebble: #C7C1B7;
+  --light-stone: #E8E4DD;
+  --warm-white: #FAFAF5;
+
+  /* Semantic */
+  --success: #52B788;
+  --warning: #D4A017;
+  --error: #B33A3A;
+  --info: #3D7A7A;
 
   /* Light theme (default) */
-  --bg-color: #ffffff;
-  --bg-secondary: #f8f9fa;
-  --text-color: #212529;
-  --text-muted: #6c757d;
-  --border-color: #dee2e6;
-  --card-bg: #ffffff;
-  --navbar-bg: #f8f9fa;
+  --primary-color: #2D6A4F;
+  --primary-hover: #1B4332;
+  --secondary-color: #D4A017;
+  --bg-color: #FAFAF5;
+  --bg-secondary: #E8F5EE;
+  --bg-surface: #E8E4DD;
+  --text-color: #1A1A18;
+  --text-muted: #8D8478;
+  --border-color: #C7C1B7;
+  --card-bg: #E8E4DD;
+  --navbar-bg: #FAFAF5;
+  --link-color: #2D6A4F;
+  --link-hover: #1B4332;
 }
 
 [data-theme="dark"] {
-  --bg-color: #1a1a1a;
-  --bg-secondary: #2d2d2d;
-  --text-color: #e9ecef;
-  --text-muted: #adb5bd;
-  --border-color: #495057;
-  --card-bg: #2d2d2d;
-  --navbar-bg: #212529;
+  --primary-color: #52B788;
+  --primary-hover: #B7E4C7;
+  --secondary-color: #F2CC8F;
+  --bg-color: #1A1A18;
+  --bg-secondary: #3D3D38;
+  --bg-surface: #3D3D38;
+  --text-color: #E8E4DD;
+  --text-muted: #C7C1B7;
+  --border-color: #3D3D38;
+  --card-bg: #3D3D38;
+  --navbar-bg: #1A1A18;
+  --link-color: #52B788;
+  --link-hover: #B7E4C7;
 }
 
-body {
-  margin: 0;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+/* ============================================
+   Base
+   ============================================ */
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ============================================
+   Typography — DM Sans headings, Inter body
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6,
+.section-title {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+code, pre, .font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+a {
+  color: var(--link-color);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+/* ============================================
+   Layout
+   ============================================ */
+
 section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 2.25rem;
   color: var(--text-color);
 }
 
 .section-subtitle {
   text-align: center;
-  margin-top: -30px;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
   font-size: 1.1rem;
   color: var(--text-muted);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Dark mode overrides for Bootstrap components */
+/* ============================================
+   Brand buttons
+   ============================================ */
+
+.btn.btn-brand {
+  background-color: var(--canopy) !important;
+  border-color: var(--canopy) !important;
+  color: #fff !important;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.btn.btn-brand:hover,
+.btn.btn-brand:focus {
+  background-color: var(--deep-forest) !important;
+  border-color: var(--deep-forest) !important;
+  color: #fff !important;
+}
+
+.btn.btn-brand-outline {
+  background-color: transparent !important;
+  border: 2px solid var(--canopy) !important;
+  color: var(--canopy) !important;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.btn.btn-brand-outline:hover,
+.btn.btn-brand-outline:focus {
+  background-color: var(--canopy) !important;
+  border-color: var(--canopy) !important;
+  color: #fff !important;
+}
+
+.btn.btn-brand-amber {
+  background-color: var(--amber) !important;
+  border-color: var(--amber) !important;
+  color: var(--charcoal) !important;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.btn.btn-brand-amber:hover,
+.btn.btn-brand-amber:focus {
+  background-color: var(--dark-honey) !important;
+  border-color: var(--dark-honey) !important;
+  color: #fff !important;
+}
+
+[data-theme="dark"] .btn.btn-brand {
+  background-color: var(--fern) !important;
+  border-color: var(--fern) !important;
+  color: var(--charcoal) !important;
+}
+[data-theme="dark"] .btn.btn-brand:hover {
+  background-color: var(--lichen) !important;
+  border-color: var(--lichen) !important;
+  color: var(--charcoal) !important;
+}
+
+[data-theme="dark"] .btn.btn-brand-outline {
+  background-color: transparent !important;
+  border-color: var(--fern) !important;
+  color: var(--fern) !important;
+}
+[data-theme="dark"] .btn.btn-brand-outline:hover {
+  background-color: var(--fern) !important;
+  border-color: var(--fern) !important;
+  color: var(--charcoal) !important;
+}
+
+/* ============================================
+   Cards
+   ============================================ */
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] .card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-color);
+  border-radius: 8px 8px 0 0 !important;
+}
+
+/* ============================================
+   Navbar
+   ============================================ */
+
+.navbar {
+  background-color: var(--navbar-bg) !important;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar .nav-link {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 500;
+  color: var(--text-color) !important;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 700;
+}
+
+/* ============================================
+   Dark mode overrides for Bootstrap
+   ============================================ */
+
 [data-theme="dark"] .bg-light {
   background-color: var(--bg-secondary) !important;
 }
@@ -75,7 +281,7 @@ section {
 }
 
 [data-theme="dark"] .card-header {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--bg-surface);
   border-color: var(--border-color);
 }
 
@@ -85,14 +291,6 @@ section {
 
 [data-theme="dark"] .navbar {
   background-color: var(--navbar-bg) !important;
-}
-
-[data-theme="dark"] .navbar-light .navbar-nav .nav-link {
-  color: var(--text-color);
-}
-
-[data-theme="dark"] .navbar-light .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
 }
 
 [data-theme="dark"] .navbar-brand {
@@ -105,11 +303,103 @@ section {
 }
 
 [data-theme="dark"] .btn-outline-secondary:hover {
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-surface);
   border-color: var(--border-color);
   color: var(--text-color);
 }
 
-[data-theme="dark"] footer.bg-dark {
-  background-color: #0d0d0d !important;
+[data-theme="dark"] footer {
+  background-color: #1A1A18 !important;
+}
+
+[data-theme="dark"] .text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Badge overrides */
+.badge.bg-brand {
+  background-color: var(--canopy) !important;
+  color: #fff;
+}
+
+.badge.bg-brand-light {
+  background-color: var(--morning-dew) !important;
+  color: var(--deep-forest);
+}
+
+[data-theme="dark"] .badge.bg-brand {
+  background-color: var(--fern) !important;
+  color: var(--charcoal);
+}
+
+[data-theme="dark"] .badge.bg-brand-light {
+  background-color: var(--deep-forest) !important;
+  color: var(--fern);
+}
+
+/* Nav pills override */
+.nav-pills .nav-link {
+  color: var(--text-color);
+  border-radius: 4px;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+  background-color: var(--canopy);
+  color: #fff;
+}
+
+[data-theme="dark"] .nav-pills .nav-link.active,
+[data-theme="dark"] .nav-pills .nav-link:hover {
+  background-color: var(--fern);
+  color: var(--charcoal);
+}
+
+/* Horizontal rule */
+hr {
+  border-color: var(--border-color);
+  opacity: 0.5;
+}
+
+/* Override Bootstrap primary color globally */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+/* Bootstrap .btn-primary override */
+.btn-primary {
+  background-color: var(--canopy);
+  border-color: var(--canopy);
+}
+.btn-primary:hover {
+  background-color: var(--deep-forest);
+  border-color: var(--deep-forest);
+}
+
+.btn-secondary {
+  background-color: var(--amber);
+  border-color: var(--amber);
+  color: var(--charcoal);
+}
+.btn-secondary:hover {
+  background-color: var(--dark-honey);
+  border-color: var(--dark-honey);
+  color: #fff;
+}
+
+/* Selection highlight */
+::selection {
+  background-color: var(--lichen);
+  color: var(--deep-forest);
+}
+
+[data-theme="dark"] ::selection {
+  background-color: var(--deep-forest);
+  color: var(--fern);
 }
