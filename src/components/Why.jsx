@@ -26,7 +26,7 @@ const features = [
 
 const Why = () => {
   return (
-    <section id="why" className="bg-light">
+    <section id="why" style={{ backgroundColor: 'var(--bg-secondary)' }}>
       <Container>
         <h2 className="section-title">Measuring the Unmeasurable</h2>
         <p className="section-subtitle">
@@ -37,7 +37,7 @@ const Why = () => {
             <Col key={index} md={6} lg={3} className="d-flex align-items-stretch mb-4">
               <Card className="text-center w-100">
                 <Card.Body>
-                  <div style={{ fontSize: '3rem' }}>{feature.icon}</div>
+                  <div style={{ fontSize: '2.5rem' }}>{feature.icon}</div>
                   <Card.Title as="h4" className="my-3">{feature.title}</Card.Title>
                   <Card.Text>{feature.text}</Card.Text>
                 </Card.Body>

@@ -3,13 +3,13 @@ import { Container, Row, Col, Nav } from 'react-bootstrap';
 
 const Vision = () => {
   return (
-    <section id="vision" className="bg-light">
+    <section id="vision" style={{ backgroundColor: 'var(--bg-secondary)' }}>
       <Container>
         <h2 className="section-title">The Vision</h2>
         <p className="section-subtitle">
           WeSense.earth aims to be more than a data source; it's a hub that integrates and contextualizes all relevant environmental data.
         </p>
-        <Row className="align-items-center">
+        <Row className="align-items-start">
           <Col md={4}>
             <Nav variant="pills" className="flex-column">
               <Nav.Item>

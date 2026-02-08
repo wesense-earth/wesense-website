@@ -2,11 +2,20 @@ import React from 'react';
 import { Navbar, Container, Nav, Button } from 'react-bootstrap';
 
 const Header = ({ theme, toggleTheme }) => {
+  const logoSrc = theme === 'dark'
+    ? '/logos/logo-solid-dark.png'
+    : '/logos/logo-solid-light.png';
+
   return (
-    <Navbar bg="light" expand="lg" sticky="top" className="shadow-sm">
+    <Navbar expand="lg" sticky="top" className="shadow-sm">
       <Container>
-        <Navbar.Brand href="#home" className="fw-bold">
-          <span style={{ color: '#198754' }}>We</span><span style={{ color: '#0d6efd' }}>Sense</span>.earth
+        <Navbar.Brand href="#home">
+          <img
+            src={logoSrc}
+            alt="WeSense.earth"
+            height="44"
+            className="d-inline-block align-middle"
+          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

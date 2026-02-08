@@ -5,7 +5,7 @@ const roadmapPhases = [
   {
     phase: 'Phase 1: Core Pipeline',
     status: 'In Progress',
-    statusVariant: 'primary',
+    badgeClass: 'bg-brand',
     description: 'Building the core data pipeline, from sensor ingestion to storage.',
     items: [
       { text: 'Sensor Firmware & Data Ingestion', done: true },
@@ -21,7 +21,7 @@ const roadmapPhases = [
   {
     phase: 'Phase 2: Decentralized Archiving',
     status: 'Next Up',
-    statusVariant: 'secondary',
+    badgeClass: 'bg-brand-light',
     description: 'Creating permanent, immutable archives on the decentralized web.',
     items: [
       { text: 'Daily Archiving Script (Parquet Export)', done: false },
@@ -33,7 +33,7 @@ const roadmapPhases = [
   {
     phase: 'Phase 3: Live P2P Distribution',
     status: 'Planned',
-    statusVariant: 'secondary',
+    badgeClass: 'bg-brand-light',
     description: 'Real-time data distribution via peer-to-peer network.',
     items: [
       { text: 'libp2p pub/sub Integration', done: false },
@@ -44,7 +44,7 @@ const roadmapPhases = [
   {
     phase: 'Phase 4: Community Growth',
     status: 'Future',
-    statusVariant: 'dark',
+    badgeClass: 'bg-brand-light',
     description: 'Onboarding community members to strengthen and grow the network.',
     items: [
       { text: 'Multi-Node Testing & Replication', done: false },
@@ -58,7 +58,7 @@ const roadmapPhases = [
 
 const Roadmap = () => {
   return (
-    <section id="roadmap" className="bg-light">
+    <section id="roadmap" style={{ backgroundColor: 'var(--bg-secondary)' }}>
       <Container>
         <h2 className="section-title">Our Roadmap</h2>
         <p className="section-subtitle">
@@ -69,15 +69,15 @@ const Roadmap = () => {
             <Col key={index} lg={3} className="d-flex align-items-stretch mb-4">
               <Card className="w-100">
                 <Card.Header className="d-flex justify-content-between align-items-center">
-                  <h5 className="mb-0">{phase.phase}</h5>
-                  <Badge pill bg={phase.statusVariant}>{phase.status}</Badge>
+                  <h5 className="mb-0" style={{ fontSize: '1rem' }}>{phase.phase}</h5>
+                  <Badge pill className={phase.badgeClass}>{phase.status}</Badge>
                 </Card.Header>
                 <Card.Body>
                   <Card.Text>{phase.description}</Card.Text>
                   <ul className="list-unstyled">
                     {phase.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className={item.done ? 'text-muted text-decoration-line-through' : ''}>
-                        {item.done ? '✅' : '◻️'} {item.text}
+                      <li key={itemIndex} className={item.done ? 'text-decoration-line-through' : ''} style={{ color: item.done ? 'var(--text-muted)' : 'var(--text-color)', fontSize: '0.9rem' }}>
+                        <span style={{ color: item.done ? 'var(--fern)' : 'var(--text-muted)' }}>{item.done ? '✓' : '○'}</span> {item.text}
                       </li>
                     ))}
                   </ul>
