@@ -51,7 +51,7 @@ const Vision = () => {
             <div>
               <h4>Emergent Accuracy</h4>
               <p>
-                The network doesn't just collect data; it learns from it. WeSense is designed to work with both precision instruments and affordable off-the-shelf sensors alike — we maintain a list of recommended low-cost sensors for DIY builds. By capturing rich metadata, we can use statistical swarm correction to cross-calibrate the entire network, automatically detect and compensate for drifting sensors, and transform the collective power of thousands of devices into a uniquely robust and trustworthy picture of our world.
+                The network doesn't just collect data; it learns from it. WeSense is designed to work with both precision instruments and affordable off-the-shelf sensors alike, by using statistical swarm correction to cross-calibrate the entire network, we automatically detect and compensate for drifting sensors, and transform the collective power of thousands of devices into a uniquely robust and trustworthy picture of our world.
               </p>
             </div>
           </Col>
