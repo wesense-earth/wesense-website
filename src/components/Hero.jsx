@@ -6,10 +6,10 @@ const Hero = () => {
     <Container fluid className="py-5 text-center" id="home" style={{ backgroundColor: 'var(--bg-secondary)' }}>
       <Row className="py-lg-5">
         <Col lg={6} md={8} className="mx-auto">
-          <h1 className="fw-bold" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
+          <h1 className="fw-bold">
             Sense Your World.
           </h1>
-          <h1 className="fw-bold mb-4" style={{ fontFamily: "'DM Sans', system-ui, sans-serif" }}>
+          <h1 className="fw-bold mb-4">
             Share Our Planet.
           </h1>
           <p className="lead" style={{ color: 'var(--text-muted)' }}>
@@ -17,7 +17,7 @@ const Hero = () => {
           </p>
           <p>
             <Button href="#mission" className="btn-brand my-2 mx-1">Our Mission</Button>
-            <Button href="#contribute" className="btn-brand my-2 mx-1">Get Involved</Button>
+            <Button href="#contribute" className="btn-brand-outline my-2 mx-1">Get Involved</Button>
           </p>
         </Col>
       </Row>
