@@ -40,6 +40,17 @@ const HowItWorks = () => {
             </Col>
           ))}
         </Row>
+        <Row className="mt-3">
+          <Col className="text-center">
+            <p style={{ fontSize: '1.1rem' }}>
+              Browse the live archive at{' '}
+              <a href="https://ipfs.io/ipns/archive.wesense.earth/" target="_blank" rel="noopener noreferrer" className="link-brand">
+                archive.wesense.earth
+              </a>
+              {' '}&mdash; sensor readings stored permanently on IPFS, free for anyone to access, download, and host.
+            </p>
+          </Col>
+        </Row>
       </Container>
     </section>
   );

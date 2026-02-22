@@ -393,6 +393,19 @@ hr {
   color: #fff;
 }
 
+/* Brand-coloured links */
+a.link-brand {
+  color: var(--canopy);
+  font-weight: 500;
+  text-decoration: none;
+}
+a.link-brand:hover {
+  text-decoration: underline;
+}
+[data-theme="dark"] a.link-brand {
+  color: var(--fern);
+}
+
 /* Selection highlight */
 ::selection {
   background-color: var(--lichen);
