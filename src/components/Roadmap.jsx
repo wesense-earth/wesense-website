@@ -63,8 +63,7 @@ const Roadmap = () => {
       <Container>
         <h2 className="section-title">Our Roadmap</h2>
         <p className="section-subtitle">
-          This project has been in active development for well over a year.
-          We are building in public, with a clear path toward a fully decentralized, community-owned network.
+          This project has been in development since 2024 and is still considered alpha software. Most of the big blocks of work have been completed, with the focus now shifting to documentation, security, bug fixes, stability and adding support for 3rd party sensor hardware. The vision remains to build toward a fully decentralized, community-owned network that anyone can contribute to, without paywalls or judgement.
         </p>
         <Row>
           {roadmapPhases.map((phase, index) => (
