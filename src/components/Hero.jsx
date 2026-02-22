@@ -17,7 +17,7 @@ const Hero = () => {
           </p>
           <p>
             <Button href="#mission" className="btn-brand my-2 mx-1">Our Mission</Button>
-            <Button href="#contribute" className="btn-brand-outline my-2 mx-1">Get Involved</Button>
+            <Button href="https://github.com/wesense-earth" target="_blank" rel="noopener noreferrer" className="btn-brand-outline my-2 mx-1">Get Involved</Button>
           </p>
         </Col>
       </Row>
