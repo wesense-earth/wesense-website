@@ -267,6 +267,26 @@ section {
 }
 
 /* ============================================
+   Footer
+   ============================================ */
+
+.site-footer {
+  background-color: var(--deep-forest);
+  color: var(--light-stone);
+}
+
+.site-footer a {
+  color: var(--lichen);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ============================================
    Dark mode overrides for Bootstrap
    ============================================ */
 
@@ -280,9 +300,21 @@ section {
   color: var(--text-color);
 }
 
+[data-theme="dark"] .card-title {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .card-text {
+  color: var(--text-muted);
+}
+
 [data-theme="dark"] .card-header {
   background-color: var(--bg-surface);
   border-color: var(--border-color);
+}
+
+[data-theme="dark"] .lead {
+  color: var(--text-color);
 }
 
 [data-theme="dark"] .text-muted {
@@ -297,6 +329,15 @@ section {
   color: var(--text-color) !important;
 }
 
+/* Navbar toggler (hamburger) dark mode */
+[data-theme="dark"] .navbar-toggler {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+  filter: invert(1);
+}
+
 [data-theme="dark"] .btn-outline-secondary {
   color: var(--text-color);
   border-color: var(--border-color);
@@ -308,12 +349,17 @@ section {
   color: var(--text-color);
 }
 
-[data-theme="dark"] footer {
-  background-color: #1A1A18 !important;
+[data-theme="dark"] .site-footer {
+  background-color: var(--charcoal);
 }
 
 [data-theme="dark"] .text-primary {
   color: var(--primary-color) !important;
+}
+
+/* Ensure list text respects dark mode */
+[data-theme="dark"] li {
+  color: var(--text-color);
 }
 
 /* Badge overrides */
