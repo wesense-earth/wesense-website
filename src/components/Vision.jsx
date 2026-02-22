@@ -30,7 +30,7 @@ const Vision = () => {
             <div>
               <h4>Open Hardware</h4>
               <p>
-                True open source means open hardware. We're developing custom PCB designs that you can build yourself or purchase ready-made. With modular sensor support, 3D printable cases, and designs for both indoor and outdoor deployment, you'll have the freedom to manufacture, modify, and deploy sensors exactly how you need them—without vendor lock-in.
+                True open source means open hardware. We're developing custom PCB designs that you can build yourself or purchase ready-made. With modular sensor support, 3D printable cases, and designs for both indoor and outdoor deployment, you'll have the freedom to manufacture, modify, and deploy sensors exactly how you need them—without vendor lock-in. Already have a sensor? We're also building integrations for existing platforms like Meshtastic and Home Assistant, so you can contribute data from hardware you already own.
               </p>
             </div>
             <hr/>
@@ -51,7 +51,7 @@ const Vision = () => {
             <div>
               <h4>Emergent Accuracy</h4>
               <p>
-                The network doesn't just collect data; it learns from it. By capturing rich metadata, we can use data science to cross-calibrate the entire swarm of sensors, correct for drift, and transform the statistical power of thousands of sensors into a uniquely robust and trustworthy picture of our world.
+                The network doesn't just collect data; it learns from it. WeSense is designed to work with both precision instruments and affordable off-the-shelf sensors alike — we maintain a list of recommended low-cost sensors for DIY builds. By capturing rich metadata, we can use statistical swarm correction to cross-calibrate the entire network, automatically detect and compensate for drifting sensors, and transform the collective power of thousands of devices into a uniquely robust and trustworthy picture of our world.
               </p>
             </div>
           </Col>

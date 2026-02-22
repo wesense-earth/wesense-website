@@ -63,6 +63,7 @@ const Roadmap = () => {
       <Container>
         <h2 className="section-title">Our Roadmap</h2>
         <p className="section-subtitle">
+          This project has been in active development for well over a year.
           We are building in public, with a clear path toward a fully decentralized, community-owned network.
         </p>
         <Row>
