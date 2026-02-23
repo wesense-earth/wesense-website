@@ -28,6 +28,7 @@ const roadmapPhases = [
       { text: 'IPFS Node Setup', done: true },
       { text: 'OrbitDB Registry (Hubs, Ingesters, Archives)', done: true },
       { text: 'Archive Integration with P2P Stack', done: true },
+      { text: 'Migrate IPFS Archives from Helia to Kubo', done: true },
     ],
   },
   {
