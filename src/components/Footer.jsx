@@ -14,7 +14,7 @@ const Footer = () => {
           <Col md={6} className="text-center text-md-end">
             <a href="https://github.com/wesense-earth" target="_blank" rel="noopener noreferrer" className="me-3">GitHub</a>
             <a href="https://www.reddit.com/r/wesense/" target="_blank" rel="noopener noreferrer" className="me-3">Reddit</a>
-            <a href="https://mastodon.social/@wesense" target="_blank" rel="noopener noreferrer" className="me-3">Mastodon</a>
+            <a href="https://mastodon.wesense.earth/@wesense" target="_blank" rel="me noopener noreferrer" className="me-3">Mastodon</a>
           </Col>
         </Row>
       </Container>
