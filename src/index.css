@@ -368,6 +368,11 @@ section {
   color: #fff;
 }
 
+.badge.bg-brand-medium {
+  background-color: var(--fern) !important;
+  color: #fff;
+}
+
 .badge.bg-brand-light {
   background-color: var(--morning-dew) !important;
   color: var(--deep-forest);
@@ -376,6 +381,11 @@ section {
 [data-theme="dark"] .badge.bg-brand {
   background-color: var(--fern) !important;
   color: var(--charcoal);
+}
+
+[data-theme="dark"] .badge.bg-brand-medium {
+  background-color: var(--canopy) !important;
+  color: #fff;
 }
 
 [data-theme="dark"] .badge.bg-brand-light {
