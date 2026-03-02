@@ -44,7 +44,21 @@ const roadmapPhases = [
     ],
   },
   {
-    phase: 'Phase 4: Community Growth',
+    phase: 'Phase 4: Archive & Gateway Refactor',
+    status: 'In Progress',
+    badgeClass: 'bg-brand-medium',
+    description: 'Storage gateway, optimised archives, and community-driven replication at subdivision level.',
+    items: [
+      { text: 'Storage Gateway with Pluggable Backends', done: false },
+      { text: 'Iroh Distribution Layer Evaluation', done: false },
+      { text: 'Subdivision-Level Archive Partitioning', done: false },
+      { text: 'Parquet Optimisation (Binary Sigs, ZSTD)', done: false },
+      { text: 'Field Terminology Standardisation', done: false },
+      { text: 'Community-Driven Replication Model', done: false },
+    ],
+  },
+  {
+    phase: 'Phase 5: Community Growth',
     status: 'Future',
     badgeClass: 'bg-brand-light',
     description: 'Onboarding community members to strengthen and grow the network.',
@@ -64,7 +78,7 @@ const Roadmap = () => {
       <Container>
         <h2 className="section-title">Our Roadmap</h2>
         <p className="section-subtitle">
-          This project has been in development since 2024 and is still considered alpha software. Most of the big blocks of work have been completed, with the focus now shifting to documentation, security, bug fixes, stability and adding support for 3rd party sensor hardware. The vision remains to build toward a fully decentralized, community-owned network that anyone can contribute to, without paywalls or judgement.
+          This project has been in development since 2024 and is still considered alpha software. The core pipeline, decentralized archiving, and live P2P distribution are complete. Current work focuses on evolving the archive layer with a storage gateway, optimised Parquet formats, and community-driven replication at subdivision level. The vision remains to build toward a fully decentralized, community-owned network that anyone can contribute to, without paywalls or judgement.
         </p>
         <Row>
           {roadmapPhases.map((phase, index) => (
