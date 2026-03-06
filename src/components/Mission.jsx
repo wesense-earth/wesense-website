@@ -9,6 +9,12 @@ const Mission = () => {
           <div className="col-lg-8 mx-auto text-center">
             <h2 className="section-title">Our Mission</h2>
             <p className="lead" style={{ fontSize: '1.2rem', fontWeight: '300' }}>
+              At its core, WeSense is a decentralised telemetry network built on an unbreakable promise: the data is free, for everyone, forever.
+              Every reading — past and present — is openly accessible. Anyone can query the full historical archive. Anyone can tap into the live feed.
+              There is no paywall, no gatekeeper, no lock-in. Environmental data is a commons, not a commodity, and WeSense exists to keep it that way.
+            </p>
+            <hr className="my-4" />
+            <p className="lead" style={{ fontSize: '1.2rem', fontWeight: '300' }}>
               This project is founded on a simple but powerful idea: that to care for our planet, we must first be able to see and understand it.
               WeSense.earth is a mission to create a living, breathing, community-owned map of our environment. It transforms raw data into a shared language,
               placing the power of environmental insight into the hands of every individual, classroom, and community.
