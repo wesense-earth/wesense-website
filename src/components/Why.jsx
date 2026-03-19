@@ -33,7 +33,7 @@ const Why = () => {
           The world's only free, near-real-time environmental data from actual sensors — not models, not estimates, not paywalled.
         </p>
         <p className="section-subtitle">
-          Government networks provide ~10,000 monitoring stations worldwide, but publish with 1–2 hour delays via 50+ separate APIs. Commercial services charge for access to the same delayed data, or fill gaps with physics models that calculate what the air quality <em>should be</em> rather than measuring it. No existing service — free or paid — provides dense, live, global coverage from real sensors.
+          Government networks provide limited-resolution monitoring — sparse stations in select locations, publishing with 1–2 hour delays via dozens of separate APIs. Commercial services charge for access to the same delayed data, or fill gaps with physics models that calculate what the air quality <em>should be</em> rather than measuring it. No existing service — free or paid — provides dense, live, global coverage from real sensors.
         </p>
         <p className="section-subtitle">
           That's what we're building — and we need your help to make it real. WeSense is an early-stage open-source project building the infrastructure for community-deployed sensors reporting every 5 minutes, with all data free and open forever. The core platform is working, but a global sensor network only exists when people like you place sensors in their homes, streets, and communities. <a href="#contribute">See how you can help</a>, or check out the <a href="#roadmap">roadmap</a> to see where we're headed.
