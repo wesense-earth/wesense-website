@@ -15,8 +15,11 @@ const Hero = () => {
           <p className="lead" style={{ color: 'var(--text-muted)' }}>
             Join the community-owned environmental network. WeSense.earth empowers everyone to monitor their local environment and contribute to a global, transparent, and permanent record of our planet's health.
           </p>
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>
+            Engineered from day one to support millions of stations, each with many sensors. This isn't a prototype — it's real P2P infrastructure designed for planetary scale.
+          </p>
           <p>
-            <Button href="https://map.wesense.earth" target="_blank" rel="noopener noreferrer" className="btn-brand-outline my-2 mx-1">Live Dashboard <small style={{ fontSize: '0.75em', opacity: 0.7 }}>(alpha)</small></Button>
+            <Button href="https://map.wesense.earth" target="_blank" rel="noopener noreferrer" className="btn-brand-outline my-2 mx-1">Live Dashboard <small style={{ fontSize: '0.75em', opacity: 0.7 }}>(pre-alpha)</small></Button>
             <Button href="#mission" className="btn-brand-outline my-2 mx-1">Our Mission</Button>
             <Button href="https://github.com/wesense-earth" target="_blank" rel="noopener noreferrer" className="btn-brand-outline my-2 mx-1">Get Involved</Button>
           </p>

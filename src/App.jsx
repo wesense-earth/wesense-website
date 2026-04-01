@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Mission from './components/Mission';
 import Why from './components/Why';
 import Audience from './components/Audience';
+import WhatYouCanDo from './components/WhatYouCanDo';
 import Vision from './components/Vision';
 import Contribute from './components/Contribute';
 import Footer from './components/Footer';
@@ -38,6 +39,7 @@ function App() {
         <Why />
         <HowItWorks />
         <Audience />
+        <WhatYouCanDo />
         <Vision />
         <Roadmap />
         <Contribute />
