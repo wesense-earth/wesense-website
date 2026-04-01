@@ -44,29 +44,31 @@ const roadmapPhases = [
     ],
   },
   {
-    phase: 'Phase 4: Archive & Gateway Refactor',
-    status: 'In Progress',
-    badgeClass: 'bg-brand-medium',
-    description: 'Storage gateway, optimised archives, and community-driven replication at subdivision level.',
+    phase: 'Phase 4: Archive & P2P Replication',
+    status: 'Complete',
+    badgeClass: 'bg-brand',
+    description: 'Storage broker, Iroh archive replication, and community-driven P2P distribution.',
     items: [
-      { text: 'Storage Gateway with Pluggable Backends', done: false },
-      { text: 'Iroh Distribution Layer Evaluation', done: false },
-      { text: 'Subdivision-Level Archive Partitioning', done: false },
-      { text: 'Parquet Optimisation (Binary Sigs, ZSTD)', done: false },
-      { text: 'Field Terminology Standardisation', done: false },
-      { text: 'Community-Driven Replication Model', done: false },
+      { text: 'Storage Broker with Pluggable Backends', done: true },
+      { text: 'Iroh P2P Archive Replication (91K+ blobs synced)', done: true },
+      { text: 'Subdivision-Level Archive Partitioning', done: true },
+      { text: 'Zenoh Live P2P with Proxy Architecture', done: true },
+      { text: 'OrbitDB Attestation Migration to Peer Index Exchange', done: true },
+      { text: 'Community-Driven Replication Model', done: true },
     ],
   },
   {
-    phase: 'Phase 5: Community Growth',
-    status: 'Future',
-    badgeClass: 'bg-brand-light',
-    description: 'Onboarding community members to strengthen and grow the network.',
+    phase: 'Phase 5: Robustness & Community Growth',
+    status: 'In Progress',
+    badgeClass: 'bg-brand-medium',
+    description: 'Hardening the P2P network for reliability, scaling to new nodes, and onboarding community members.',
     items: [
-      { text: 'Multi-Node Testing & Replication', done: false },
-      { text: 'Hub Finder Webapp', done: false },
+      { text: 'Multi-Node Replication Testing (2 hosts verified)', done: true },
+      { text: 'Internet Replication via VPS', done: false },
+      { text: 'Shutdown/Restart Robustness Testing', done: false },
       { text: 'Operator Documentation', done: false },
-      { text: 'Community Badges & Leaderboards', done: false },
+      { text: 'Hub Finder Webapp', done: false },
+      { text: 'Parquet Optimisation (Binary Sigs, ZSTD)', done: false },
       { text: 'Advanced Visualizations', done: false },
     ],
   },
@@ -78,7 +80,7 @@ const Roadmap = () => {
       <Container>
         <h2 className="section-title">Our Roadmap</h2>
         <p className="section-subtitle">
-          This project has been in development since 2024 and is still considered alpha software. The core pipeline, decentralized archiving, and live P2P distribution are complete. Current work focuses on evolving the archive layer with a storage gateway, optimised Parquet formats, and community-driven replication at subdivision level. The vision remains to build toward a fully decentralized, community-owned network that anyone can contribute to, without paywalls or judgement.
+          This project has been in development since 2024 and is still considered alpha software. The core pipeline, decentralized archiving, live P2P distribution, and archive replication are complete. Two stations are successfully replicating 91,000+ archives via Iroh P2P with zero failures. Current work focuses on robustness testing across more nodes (including internet-only VPS replication), operator documentation, and preparing for community onboarding. The vision remains to build toward a fully decentralized, community-owned network that anyone can contribute to, without paywalls or judgement.
         </p>
         <Row>
           {roadmapPhases.map((phase, index) => (
