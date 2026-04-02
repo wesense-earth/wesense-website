@@ -35,7 +35,7 @@ const Vision = () => {
               <h5>Build Your Own</h5>
               <p>
                 Our open-source firmware runs on a wide range of ESP32 boards (T-Beam, C3, C6, S3) and auto-detects connected sensors. Flash, configure WiFi, and your device starts reporting to the network. See the{' '}
-                <a href="https://wiki.wesense.earth/sensors" target="_blank" rel="noopener noreferrer" className="link-brand">
+                <a href="https://github.com/wesense-earth/wesense/wiki/Recommended-Sensors" target="_blank" rel="noopener noreferrer" className="link-brand">
                   recommended sensor list
                 </a>
                 {' '}for tested hardware combinations.

@@ -7,28 +7,28 @@ const sensorContributions = [
     text: 'Add environmental sensors to a Meshtastic device and contribute data through the mesh network. Your readings travel across the mesh and into the WeSense network automatically.',
     buttonText: 'View on Wiki',
     buttonClass: 'btn-brand-outline',
-    href: 'https://wiki.wesense.earth/meshtastic-node',
+    href: 'https://github.com/wesense-earth/wesense/wiki/Meshtastic-Node',
   },
   {
     title: 'Build a Meshtastic Gateway',
     text: "Share your neighbourhood's environmental telemetry with the world. A gateway bridges your local mesh to the internet, contributing data from nearby nodes that aren't connected themselves.",
     buttonText: 'View on Wiki',
     buttonClass: 'btn-brand-outline',
-    href: 'https://wiki.wesense.earth/meshtastic-gateway',
+    href: 'https://github.com/wesense-earth/wesense/wiki/Meshtastic-Gateway',
   },
   {
     title: 'Build a WeSense Node',
     text: 'Deploy a dedicated ESP32 sensor for high-frequency environmental monitoring. Reports every 5 minutes over WiFi or LoRaWAN with temperature, humidity, pressure, CO2, PM2.5, and more.',
     buttonText: 'View on Wiki',
     buttonClass: 'btn-brand-outline',
-    href: 'https://wiki.wesense.earth/wesense-node',
+    href: 'https://github.com/wesense-earth/wesense/wiki/WeSense-Node',
   },
   {
     title: 'Home Assistant / Ecowitt',
     text: 'Already running Home Assistant or Ecowitt devices? Connect your existing environmental sensors to the WeSense network with our ingester plugin and contribute data from hardware you already own.',
     buttonText: 'View on Wiki',
     buttonClass: 'btn-brand-outline',
-    href: 'https://wiki.wesense.earth/home-assistant',
+    href: 'https://github.com/wesense-earth/wesense/wiki/Home-Assistant',
   },
 ];
 
@@ -52,7 +52,7 @@ const otherContributions = [
     text: 'Help strengthen the decentralized network by running a WeSense station on a Raspberry Pi or home server. Your station automatically replicates and serves archives for your region via Iroh P2P, keeping the data resilient and permanent.',
     buttonText: 'View on Wiki',
     buttonClass: 'btn-brand-outline',
-    href: 'https://wiki.wesense.earth/operate-station',
+    href: 'https://github.com/wesense-earth/wesense/wiki/Operate-a-Station',
   },
 ];
 
