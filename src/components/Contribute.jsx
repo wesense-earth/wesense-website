@@ -43,9 +43,9 @@ const otherContributions = [
   {
     title: 'Contribute Data Science',
     text: 'Help us build the models that will achieve emergent accuracy, uncover hidden environmental trends, and turn raw data into profound insights.',
-    buttonText: 'Coming Soon',
+    buttonText: 'Get Involved',
     buttonClass: 'btn-brand-outline',
-    href: null,
+    href: 'https://github.com/wesense-earth/wesense/discussions',
   },
   {
     title: 'Operate a Station',
