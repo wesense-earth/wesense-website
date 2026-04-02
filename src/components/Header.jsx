@@ -27,7 +27,6 @@ const Header = ({ theme, toggleTheme }) => {
             <Nav.Link href="#roadmap">Roadmap</Nav.Link>
             <Nav.Link href="#contribute">Join Us</Nav.Link>
             <Nav.Link href="https://map.wesense.earth/#map" target="_blank" rel="noopener noreferrer">Live Map</Nav.Link>
-            <Nav.Link href="https://map.wesense.earth" target="_blank" rel="noopener noreferrer">Live Dashboard</Nav.Link>
             <Button
               variant="outline-secondary"
               size="sm"
