@@ -58,18 +58,29 @@ const roadmapPhases = [
     ],
   },
   {
-    phase: 'Phase 5: Robustness & Community Growth',
+    phase: 'Phase 5: Robustness & Testing',
     status: 'In Progress',
     badgeClass: 'bg-brand-medium',
-    description: 'Hardening the P2P network for reliability, scaling to new nodes, and onboarding community members.',
+    description: 'Hardening the P2P network for reliability across more nodes and real-world conditions.',
     items: [
       { text: 'Multi-Node Replication Testing (2 hosts verified)', done: true },
       { text: 'Internet Replication via VPS', done: false },
       { text: 'Shutdown/Restart Robustness Testing', done: false },
-      { text: 'Operator Documentation', done: false },
+      { text: 'Network Disruption Recovery', done: false },
+      { text: 'Operator Documentation & Wiki', done: false },
+    ],
+  },
+  {
+    phase: 'Alpha 1 Release',
+    status: 'Future',
+    badgeClass: 'bg-brand-light',
+    description: 'First public release for early adopters to deploy and contribute.',
+    items: [
       { text: 'Hub Finder Webapp', done: false },
+      { text: 'One-Command Station Deployment', done: false },
       { text: 'Parquet Optimisation (Binary Sigs, ZSTD)', done: false },
       { text: 'Advanced Visualizations', done: false },
+      { text: 'Community Onboarding Guides', done: false },
     ],
   },
 ];
@@ -80,11 +91,11 @@ const Roadmap = () => {
       <Container>
         <h2 className="section-title">Our Roadmap</h2>
         <p className="section-subtitle">
-          This project has been in development since 2024 and is still considered alpha software. The core pipeline, decentralized archiving, live P2P distribution, and archive replication are complete. Two stations are successfully replicating 91,000+ archives via Iroh P2P with zero failures. Current work focuses on robustness testing across more nodes (including internet-only VPS replication), operator documentation, and preparing for community onboarding. The vision remains to build toward a fully decentralized, community-owned network that anyone can contribute to, without paywalls or judgement.
+          This project has been in development since 2024 and is currently pre-alpha software under heavy development. The core pipeline, decentralized archiving, live P2P distribution, and archive replication are complete. Two stations are successfully replicating 91,000+ archives via Iroh P2P with zero failures. Current work focuses on robustness testing across more nodes (including internet-only VPS replication) and operator documentation before the first Alpha release. The vision remains to build toward a fully decentralized, community-owned network that anyone can contribute to, without paywalls or judgement.
         </p>
         <Row>
           {roadmapPhases.map((phase, index) => (
-            <Col key={index} lg={3} className="d-flex align-items-stretch mb-4">
+            <Col key={index} lg={2} className="d-flex align-items-stretch mb-4">
               <Card className="w-100">
                 <Card.Header className="d-flex justify-content-between align-items-center">
                   <h5 className="mb-0" style={{ fontSize: '1rem' }}>{phase.phase}</h5>

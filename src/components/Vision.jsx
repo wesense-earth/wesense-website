@@ -30,7 +30,19 @@ const Vision = () => {
             <div>
               <h4>Open Hardware</h4>
               <p>
-                True open source means open hardware. We're developing custom PCB designs that you can build yourself or purchase ready-made. With modular sensor support, 3D printable cases, and designs for both indoor and outdoor deployment, you'll have the freedom to manufacture, modify, and deploy sensors exactly how you need them—without vendor lock-in. Already have a sensor? We're also building integrations for existing platforms like Meshtastic and Home Assistant, so you can contribute data from hardware you already own.
+                True open source means open hardware. All you need is a cheap ESP32 board and a sensor to get started — our firmware handles the rest. We're also developing custom PCB designs with modular sensor support and 3D printable cases for both indoor and outdoor deployment.
+              </p>
+              <h5>Build Your Own</h5>
+              <p>
+                Our open-source firmware runs on a wide range of ESP32 boards (T-Beam, C3, C6, S3) and auto-detects connected sensors. Flash, configure WiFi, and your device starts reporting to the network. See the{' '}
+                <a href="https://wiki.wesense.earth/sensors" target="_blank" rel="noopener noreferrer" className="link-brand">
+                  recommended sensor list
+                </a>
+                {' '}for tested hardware combinations.
+              </p>
+              <h5>3rd Party Hardware</h5>
+              <p>
+                Already have sensors? We support Meshtastic, Home Assistant, and Ecowitt devices out of the box. Our simple ingester plugin system means anyone can write an adapter for their own hardware — if it produces sensor data, it can join the network.
               </p>
             </div>
             <hr/>

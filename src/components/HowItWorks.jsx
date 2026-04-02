@@ -5,17 +5,17 @@ const steps = [
   {
     icon: '📚',
     title: 'Data is a Public Library',
-    text: 'All sensor data is bundled into "digital books." Instead of one company holding all the books, they are distributed across a global network of computers run by the community.',
+    text: 'All sensor data is bundled into content-addressed archives, distributed across a global network of stations run by the community. Every archive is identified by its content hash — tamper-proof by design.',
   },
   {
     icon: '📇',
     title: 'A Decentralized "Card Catalog"',
-    text: 'A peer-to-peer database, like a shared card catalog, helps everyone find the exact "book" of data they need without having to ask a central librarian or company.',
+    text: 'A peer-to-peer database helps every station find the data it needs without asking a central server. Stations discover each other, exchange indexes, and automatically replicate archives for their region.',
   },
   {
     icon: '🌍',
     title: 'Permanent & Uncensorable',
-    text: 'Because many people hold copies, the library can never be shut down, censored, or lost. As long as one copy exists, the data is safe forever. Anyone can download the entire library for their own use.',
+    text: 'Because many stations hold copies, the library can never be shut down, censored, or lost. As long as one copy exists, the data is safe forever. Anyone can download the entire library for their own use.',
   },
 ];
 
@@ -43,11 +43,11 @@ const HowItWorks = () => {
         <Row className="mt-3">
           <Col className="text-center">
             <p style={{ fontSize: '1.1rem' }}>
-              We're building this right now. An early prototype archive is taking shape at{' '}
-              <a href="https://ipfs.io/ipns/archive.wesense.earth/" target="_blank" rel="noopener noreferrer" className="link-brand">
-                archive.wesense.earth
+              This is working today. Two stations are already replicating 91,000+ archives via{' '}
+              <a href="https://www.iroh.computer/" target="_blank" rel="noopener noreferrer" className="link-brand">
+                Iroh
               </a>
-              {' '}&mdash; become a contributor by running a sensor or hosting a node, and help us grow this into a permanent, global environmental record that belongs to everyone.
+              {' '}peer-to-peer with zero failures. Every station that joins the network automatically receives and serves archives for its region &mdash; become a contributor by running a sensor or hosting a station, and help us grow this into a permanent, global environmental record that belongs to everyone.
             </p>
           </Col>
         </Row>

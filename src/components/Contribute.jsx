@@ -5,30 +5,30 @@ const sensorContributions = [
   {
     title: 'Run a Meshtastic Node',
     text: 'Add environmental sensors to a Meshtastic device and contribute data through the mesh network. Your readings travel across the mesh and into the WeSense network automatically.',
-    buttonText: 'Coming Soon',
+    buttonText: 'View on Wiki',
     buttonClass: 'btn-brand-outline',
-    href: null,
+    href: 'https://wiki.wesense.earth/meshtastic-node',
   },
   {
     title: 'Build a Meshtastic Gateway',
     text: "Share your neighbourhood's environmental telemetry with the world. A gateway bridges your local mesh to the internet, contributing data from nearby nodes that aren't connected themselves.",
-    buttonText: 'Coming Soon',
+    buttonText: 'View on Wiki',
     buttonClass: 'btn-brand-outline',
-    href: null,
+    href: 'https://wiki.wesense.earth/meshtastic-gateway',
   },
   {
     title: 'Build a WeSense Node',
     text: 'Deploy a dedicated ESP32 sensor for high-frequency environmental monitoring. Reports every 5 minutes over WiFi or LoRaWAN with temperature, humidity, pressure, CO2, PM2.5, and more.',
-    buttonText: 'Coming Soon',
+    buttonText: 'View on Wiki',
     buttonClass: 'btn-brand-outline',
-    href: null,
+    href: 'https://wiki.wesense.earth/wesense-node',
   },
   {
-    title: 'Home Assistant Plugin',
-    text: 'Already running Home Assistant? Connect your existing environmental sensors to the WeSense network with our plugin and contribute data from hardware you already own.',
-    buttonText: 'Coming Soon',
+    title: 'Home Assistant / Ecowitt',
+    text: 'Already running Home Assistant or Ecowitt devices? Connect your existing environmental sensors to the WeSense network with our ingester plugin and contribute data from hardware you already own.',
+    buttonText: 'View on Wiki',
     buttonClass: 'btn-brand-outline',
-    href: null,
+    href: 'https://wiki.wesense.earth/home-assistant',
   },
 ];
 
@@ -48,11 +48,11 @@ const otherContributions = [
     href: null,
   },
   {
-    title: 'Operate a Node',
-    text: 'Help strengthen the decentralized IPFS backend by running a node on a Raspberry Pi or home server, ensuring the data remains resilient and permanent.',
-    buttonText: 'Coming Soon',
+    title: 'Operate a Station',
+    text: 'Help strengthen the decentralized network by running a WeSense station on a Raspberry Pi or home server. Your station automatically replicates and serves archives for your region via Iroh P2P, keeping the data resilient and permanent.',
+    buttonText: 'View on Wiki',
     buttonClass: 'btn-brand-outline',
-    href: null,
+    href: 'https://wiki.wesense.earth/operate-station',
   },
 ];
 
