@@ -68,9 +68,22 @@ const roadmapPhases = [
       { text: 'TLS Encryption for Internal Services', done: true },
       { text: 'Parquet Optimisation (Benchmarked, ZSTD already optimal)', done: true },
       { text: 'Contribution Tiers & Deployment Profiles', done: true },
-      { text: 'Test Internet Replication via VPS', done: false },
-      { text: 'Robustness Testing', done: false },
+      { text: 'Test Internet Replication via VPS (93K archives, AU↔NZ)', done: true },
+      { text: 'P2P Classification Sharing Between Guardians', done: true },
+      { text: 'CGNAT & Dynamic IP Testing', done: false },
       { text: 'Operator Documentation & Wiki', done: false },
+    ],
+  },
+  {
+    phase: 'Phase 6: Scale & Accessibility',
+    status: 'Future',
+    badgeClass: 'bg-brand-light',
+    description: 'Removing barriers so anyone can participate, regardless of network conditions.',
+    items: [
+      { text: 'DERP Relay for CGNAT/Dynamic IP Users', done: false },
+      { text: 'Historical Archive Import to ClickHouse', done: false },
+      { text: 'ClickHouse Schema Migration System', done: false },
+      { text: 'Classification Delta/Diff at Scale', done: false },
     ],
   },
   {
@@ -92,7 +105,7 @@ const Roadmap = () => {
       <Container>
         <h2 className="section-title">Our Roadmap</h2>
         <p className="section-subtitle">
-          This project has been in development since 2024 and is currently pre-alpha software under heavy development. The core pipeline, decentralized archiving, live P2P distribution, and archive replication are complete. Two stations are successfully replicating 91,000+ archives via Iroh P2P with zero failures. Current work focuses on robustness testing across more nodes (including internet-only VPS replication) and operator documentation before the first Alpha release. The vision remains to build toward a fully decentralized, community-owned network that anyone can contribute to, without paywalls or judgement.
+          This project has been in development since 2024 and is currently pre-alpha software under heavy development. The core pipeline, decentralized archiving, live P2P distribution, and archive replication are complete. Three nodes across New Zealand and Australia are successfully replicating 93,000+ archives and live sensor data via P2P with zero failures. Current work focuses on robustness testing, CGNAT support for home users, and operator documentation before the first Alpha release. The vision remains to build toward a fully decentralized, community-owned network that anyone can contribute to, without paywalls or judgement.
         </p>
         <Row>
           {roadmapPhases.map((phase, index) => (
