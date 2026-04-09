@@ -13,8 +13,8 @@ const useCases = [
     icon: '🌏',
     title: 'See the Big Picture',
     text: 'Your sensor joins a global map of environmental data. Explore real-time conditions across neighbourhoods, cities, and countries. Zoom from your backyard to the entire planet on a single interactive map.',
-    cta: 'View Dashboard',
-    href: 'https://map.wesense.earth',
+    cta: 'View Map',
+    href: 'https://map.wesense.earth/#map',
   },
   {
     icon: '📊',
