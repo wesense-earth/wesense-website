@@ -2,8 +2,14 @@
   RewriteEngine On
   RewriteBase /
 
-  # Mastodon webfinger redirect for @wesense@wesense.earth
+  # Mastodon federation discovery for split-domain setup
   RewriteCond %{REQUEST_URI} ^/.well-known/webfinger
+  RewriteRule .* https://mastodon.wesense.earth%{REQUEST_URI} [R=301,L,QSA]
+
+  RewriteCond %{REQUEST_URI} ^/.well-known/nodeinfo
+  RewriteRule .* https://mastodon.wesense.earth%{REQUEST_URI} [R=301,L,QSA]
+
+  RewriteCond %{REQUEST_URI} ^/.well-known/host-meta
   RewriteRule .* https://mastodon.wesense.earth%{REQUEST_URI} [R=301,L,QSA]
 
   RewriteRule ^index\.html$ - [L]
