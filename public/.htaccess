@@ -12,6 +12,10 @@
   RewriteCond %{REQUEST_URI} ^/.well-known/host-meta
   RewriteRule .* https://mastodon.wesense.earth%{REQUEST_URI} [R=301,L,QSA]
 
+  # Mastodon API redirect for app discovery via LOCAL_DOMAIN
+  RewriteCond %{REQUEST_URI} ^/api/
+  RewriteRule .* https://mastodon.wesense.earth%{REQUEST_URI} [R=301,L,QSA]
+
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
