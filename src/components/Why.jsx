@@ -24,6 +24,12 @@ const features = [
   },
 ];
 
+const scrollTo = (e, id) => {
+  e.preventDefault();
+  const el = document.getElementById(id);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+};
+
 const Why = () => {
   return (
     <section id="why" style={{ backgroundColor: 'var(--bg-secondary)' }}>
@@ -36,7 +42,7 @@ const Why = () => {
           Government networks provide limited-resolution monitoring — sparse stations in select locations, publishing with 1–2 hour delays via dozens of separate APIs. Commercial services charge for access to the same delayed data, or fill gaps with physics models that calculate what the air quality <em>should be</em> rather than measuring it. No existing service — free or paid — provides dense, live, global coverage from real sensors.
         </p>
         <p className="section-subtitle">
-          That's what we're building — and we need your help to make it real. WeSense is an early-stage open-source project building the infrastructure for community-deployed sensors reporting every 5 minutes, with all data free and open forever. The core platform is working, but a global sensor network only exists when people like you place sensors in their homes, streets, and communities. <a href="#contribute">See how you can help</a>, or check out the <a href="#roadmap">roadmap</a> to see where we're headed.
+          That's what we're building — and we need your help to make it real. WeSense is an early-stage open-source project building the infrastructure for community-deployed sensors reporting every 5 minutes, with all data free and open forever. The core platform is working, but a global sensor network only exists when people like you place sensors in their homes, streets, and communities. <a href="#contribute" onClick={(e) => scrollTo(e, 'contribute')}>See how you can help</a>, or check out the <a href="#roadmap" onClick={(e) => scrollTo(e, 'roadmap')}>roadmap</a> to see where we're headed.
         </p>
         <p className="section-subtitle">
           Traditional monitoring is too sparse to answer the questions that matter most. WeSense.earth is designed to fill the crucial gaps.
