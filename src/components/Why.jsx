@@ -18,6 +18,11 @@ const features = [
     text: 'How do pollutants stratify and move between high-rise buildings? We can build a 3D picture of pollution in our cities from the ground up.',
   },
   {
+    icon: '🌡️',
+    title: 'Home Thermal Efficiency',
+    text: 'How well is your home insulated? By comparing indoor and outdoor temperature readings over time, you can measure how quickly your house loses heat and identify where insulation improvements would make the biggest difference.',
+  },
+  {
     icon: '🔥',
     title: 'Real-Time Event Tracking',
     text: 'When a wildfire or chemical spill occurs, a dense network of sensors can track the impact on the ground, neighborhood by neighborhood, as it unfolds.',
@@ -49,7 +54,7 @@ const Why = () => {
         </p>
         <Row>
           {features.map((feature, index) => (
-            <Col key={index} md={6} lg={3} className="d-flex align-items-stretch mb-4">
+            <Col key={index} md={6} lg className="d-flex align-items-stretch mb-4">
               <Card className="text-center w-100">
                 <Card.Body>
                   <div style={{ fontSize: '2.5rem' }}>{feature.icon}</div>
