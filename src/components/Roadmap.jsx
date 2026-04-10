@@ -71,11 +71,29 @@ const roadmapPhases = [
       { text: 'Test Internet Replication via VPS (93K archives, AU↔NZ)', done: true },
       { text: 'P2P Classification Sharing Between Guardians', done: true },
       { text: 'CGNAT & Dynamic IP Testing', done: false },
-      { text: 'Operator Documentation & Wiki', done: false },
     ],
   },
   {
-    phase: 'Phase 6: Scale & Accessibility',
+    phase: 'Phase 6: Documentation & Guides',
+    status: 'In Progress',
+    badgeClass: 'bg-brand-medium',
+    description: 'Comprehensive guides for every type of contributor, published on wesense.earth.',
+    items: [
+      { text: 'Recommended Sensors Guide (durability over accuracy)', done: false },
+      { text: 'Build a WeSense Node (flash & configure)', done: false },
+      { text: 'Meshtastic Node & Gateway Guides', done: false },
+      { text: 'Home Assistant / Ecowitt Integration Guide', done: false },
+      { text: 'Why Durability Over Accuracy (evidence-based explainer)', done: false },
+      { text: 'Operate a Station Guide', done: false },
+      { text: 'Contribution Tiers & Deployment Profiles', done: false },
+      { text: 'Architecture Overview (public)', done: false },
+      { text: 'Writing an Ingester (developer guide)', done: false },
+      { text: 'Hardware Designs & 3D Printed Enclosures', done: false },
+      { text: 'Data Access & Schema Reference', done: false },
+    ],
+  },
+  {
+    phase: 'Phase 7: Scale & Accessibility',
     status: 'Future',
     badgeClass: 'bg-brand-light',
     description: 'Removing barriers so anyone can participate, regardless of network conditions.',
@@ -109,7 +127,7 @@ const Roadmap = () => {
         </p>
         <Row>
           {roadmapPhases.map((phase, index) => (
-            <Col key={index} lg={2} className="d-flex align-items-stretch mb-4">
+            <Col key={index} md={6} lg={3} className="d-flex align-items-stretch mb-4">
               <Card className="w-100">
                 <Card.Header className="d-flex justify-content-between align-items-center">
                   <h5 className="mb-0" style={{ fontSize: '1rem' }}>{phase.phase}</h5>
