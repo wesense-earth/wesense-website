@@ -32,6 +32,30 @@ const sensorContributions = [
   },
 ];
 
+const networkContributions = [
+  {
+    title: 'Run a Regional Node',
+    text: 'Store and replicate data for your country or region. Your node archives sensor data in open Parquet format and serves it to the P2P network, so no single point of failure can lose the data.',
+    buttonText: 'Station Guide',
+    buttonClass: 'btn-brand',
+    href: 'https://docs.wesense.earth/station-operators/operate-a-station',
+  },
+  {
+    title: 'Run a World Node',
+    text: 'Store the entire network\'s data. The ultimate backup — a world node replicates every archive from every region, keeping the full dataset resilient and available.',
+    buttonText: 'Station Guide',
+    buttonClass: 'btn-brand-outline',
+    href: 'https://docs.wesense.earth/station-operators/operate-a-station',
+  },
+  {
+    title: 'Run a Meshtastic Gateway',
+    text: 'Bridge your local Meshtastic mesh to the internet. Environmental telemetry from nearby mesh nodes flows into WeSense automatically through your gateway.',
+    buttonText: 'Gateway Guide',
+    buttonClass: 'btn-brand-outline',
+    href: 'https://docs.wesense.earth/getting-started/meshtastic-gateway',
+  },
+];
+
 const otherContributions = [
   {
     title: 'Contribute Code',
@@ -48,11 +72,11 @@ const otherContributions = [
     href: 'https://github.com/wesense-earth/wesense/discussions',
   },
   {
-    title: 'Operate a Station',
-    text: 'Help strengthen the decentralized network by running a WeSense station on a Raspberry Pi or home server. Your station automatically replicates and serves archives for your region via Iroh P2P, keeping the data resilient and permanent.',
-    buttonText: 'View on Wiki',
+    title: 'Build Visualisations',
+    text: 'All WeSense data is open and queryable. Build your own dashboards, analysis tools, or integrate WeSense data into existing platforms. We\'ll link to and promote third-party tools.',
+    buttonText: 'Data Access',
     buttonClass: 'btn-brand-outline',
-    href: 'https://docs.wesense.earth/station-operators/operate-a-station',
+    href: 'https://docs.wesense.earth/data/accessing-data',
   },
 ];
 
@@ -60,7 +84,7 @@ const Contribute = () => {
   return (
     <section id="contribute">
       <Container>
-        <h2 className="section-title">Join Us</h2>
+        <h2 className="section-title">How to Contribute</h2>
         <p className="section-subtitle">
           WeSense.earth is a community movement. Whether you are a developer, a scientist, or a curious individual, there is a vital role for you.
         </p>
@@ -71,6 +95,27 @@ const Contribute = () => {
         <Row>
           {sensorContributions.map((item, index) => (
             <Col key={index} md={6} lg={3} className="mb-4">
+              <Card className="h-100">
+                <Card.Body className="d-flex flex-column">
+                  <Card.Title as="h4">{item.title}</Card.Title>
+                  <Card.Text className="flex-grow-1">{item.text}</Card.Text>
+                  {item.href ? (
+                    <Button href={item.href} target="_blank" rel="noopener noreferrer" className={`${item.buttonClass} mt-auto align-self-start`}>{item.buttonText}</Button>
+                  ) : (
+                    <Button className={`${item.buttonClass} mt-auto align-self-start`} disabled>{item.buttonText}</Button>
+                  )}
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+        <h3 className="mb-3 mt-4" style={{ color: 'var(--text-primary)' }}>Strengthen the Network</h3>
+        <p style={{ color: 'var(--text-secondary)' }}>
+          Sensors collect the data, but nodes are the infrastructure that stores, replicates, and serves it. Running a node is one of the most impactful ways to contribute.
+        </p>
+        <Row>
+          {networkContributions.map((item, index) => (
+            <Col key={index} md={6} lg={4} className="mb-4">
               <Card className="h-100">
                 <Card.Body className="d-flex flex-column">
                   <Card.Title as="h4">{item.title}</Card.Title>
