@@ -98,6 +98,8 @@ const roadmapPhases = [
     badgeClass: 'bg-brand-light',
     description: 'Removing barriers so anyone can participate, regardless of network conditions.',
     items: [
+      { text: 'Home Assistant Plugin Field Testing', done: false },
+      { text: 'Publish HA Plugin to HACS Community Store', done: false },
       { text: 'Web-Based Firmware Flasher (no Arduino IDE required)', done: false },
       { text: 'DERP Relay for CGNAT/Dynamic IP Users', done: false },
       { text: 'Historical Archive Import to ClickHouse', done: false },
