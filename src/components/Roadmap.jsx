@@ -103,6 +103,7 @@ const roadmapPhases = [
       { text: 'Historical Archive Import to ClickHouse', done: false },
       { text: 'ClickHouse Schema Migration System', done: false },
       { text: 'Classification Delta/Diff at Scale', done: false },
+      { text: 'Investigate Reticulum as Transport Layer', done: false },
     ],
   },
   {
