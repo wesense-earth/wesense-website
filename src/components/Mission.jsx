@@ -24,6 +24,14 @@ const Mission = () => {
               By observing the air in our homes, on our streets, across farmland, and into the wild places beyond, we are not just answering personal questions; we are weaving our hyper-local story into a global tapestry of understanding.
               From urban rooftops to remote rural landscapes, this is a tool for collective sense-making, empowering us to drive local action, contribute to global climate science, and build a more transparent, evidence-based relationship with the world we all share.
             </p>
+            <hr className="my-4" />
+            <p className="lead" style={{ fontSize: '1.2rem', fontWeight: '300' }}>
+              We believe openness means more than open data. Our{' '}
+              <a href="https://docs.wesense.earth/architecture/" target="_blank" rel="noopener noreferrer" className="link-brand">
+                complete system architecture
+              </a>
+              {' '}is published openly &mdash; every design decision, every protocol choice, every trade-off. Anyone can understand how WeSense works, verify our approach, suggest improvements, or build on it. Transparency isn't a risk to this project; it's the foundation of it.
+            </p>
           </div>
         </div>
       </Container>
