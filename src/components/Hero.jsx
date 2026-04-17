@@ -13,7 +13,7 @@ const Hero = () => {
             Share Our Planet.
           </h1>
           <p className="lead" style={{ color: 'var(--text-muted)' }}>
-            Join the community-owned environmental network. WeSense.earth empowers everyone to monitor their local environment and contribute to a global, transparent, and permanent record of our planet's health.
+            Join the peer-to-peer, community-owned environmental sensor network. WeSense.earth empowers everyone to monitor their local environment and contribute to a global, transparent, and permanent record of our planet's health.
           </p>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>
             Engineered from day one to support millions of stations, each with many sensors. This isn't a prototype — it's real P2P infrastructure designed for planetary scale.
