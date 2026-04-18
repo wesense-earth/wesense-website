@@ -43,11 +43,11 @@ const HowItWorks = () => {
         <Row className="mt-3">
           <Col className="text-center">
             <p style={{ fontSize: '1.1rem' }}>
-              This is working today. Two stations are already replicating 91,000+ archives via{' '}
+              This is working today. Stations are already replicating and archiving millions of sensor readings via{' '}
               <a href="https://www.iroh.computer/" target="_blank" rel="noopener noreferrer" className="link-brand">
                 Iroh
               </a>
-              {' '}peer-to-peer with zero failures. Every station that joins the network automatically receives and serves archives for its region &mdash; become a contributor by running a sensor or hosting a station, and help us grow this into a permanent, global environmental record that belongs to everyone.
+              {' '}peer-to-peer. Every station that joins the network automatically receives and serves archives for its region &mdash; become a contributor by running a sensor or hosting a station, and help us grow this into a permanent, global environmental record that belongs to everyone.
             </p>
           </Col>
         </Row>
