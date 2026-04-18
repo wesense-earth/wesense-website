@@ -75,8 +75,8 @@ const roadmapPhases = [
   },
   {
     phase: 'Phase 6: Documentation & Guides',
-    status: 'In Progress',
-    badgeClass: 'bg-brand-medium',
+    status: 'Complete',
+    badgeClass: 'bg-brand',
     description: 'Comprehensive guides for every type of contributor, published on wesense.earth.',
     items: [
       { text: 'Recommended Sensors Guide (durability over accuracy)', done: true },
@@ -88,7 +88,7 @@ const roadmapPhases = [
       { text: 'Contribution Tiers & Deployment Profiles', done: true },
       { text: 'Architecture Overview (public)', done: true },
       { text: 'Writing an Ingester (developer guide)', done: true },
-      { text: 'Data Access & Schema Reference', done: false },
+      { text: 'Data Access & Schema Reference', done: true },
     ],
   },
   {
