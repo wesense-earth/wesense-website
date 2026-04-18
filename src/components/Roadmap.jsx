@@ -1,5 +1,5 @@
-import React from 'react';
-import { Container, Row, Col, Card, Badge } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
 
 const roadmapPhases = [
   {
@@ -101,36 +101,80 @@ const roadmapPhases = [
     ],
   },
   {
-    phase: 'Alpha 2 Release',
+    phase: 'Alpha 2: Home Assistant & Onboarding',
     status: 'Future',
     badgeClass: 'bg-brand-light',
-    description: 'Follow-on release with hardening, broader platform reach, scale improvements, and community contributions deferred from Alpha 1.',
+    description: 'Lowering the barrier for everyday contributors. Home Assistant integration reaches HACS, firmware flashes from the browser, and setup guides cover the common platforms.',
     items: [
-      { text: 'Security Audit', done: false },
-      { text: 'Deployment Guides for Common Platforms', done: false },
-      { text: 'Hardware Designs & 3D Printed Enclosures', done: false },
-      { text: 'ClickHouse Schema Migration System', done: false },
       { text: 'Home Assistant Plugin Field Testing', done: false },
       { text: 'Publish HA Plugin to HACS Community Store', done: false },
       { text: 'Web-Based Firmware Flasher (no Arduino IDE required)', done: false },
+      { text: 'Deployment Guides for Common Platforms', done: false },
+    ],
+  },
+  {
+    phase: 'Alpha 3: Hardware & Networking',
+    status: 'Future',
+    badgeClass: 'bg-brand-light',
+    description: 'Physical and network-layer work — open hardware designs, connectivity for home users behind CGNAT, and research into alternative transport layers.',
+    items: [
+      { text: 'Hardware Designs & 3D Printed Enclosures', done: false },
       { text: 'DERP Relay for CGNAT/Dynamic IP Users', done: false },
       { text: 'Historical Archive Import to ClickHouse', done: false },
-      { text: 'Classification Delta/Diff at Scale', done: false },
       { text: 'Investigate Reticulum as Transport Layer', done: false },
+    ],
+  },
+  {
+    phase: 'Alpha 4: Scale & Release Prep',
+    status: 'Future',
+    badgeClass: 'bg-brand-light',
+    description: 'Infrastructure hardening and the pre-Beta security audit — everything the network needs to stand up at scale under real-world scrutiny.',
+    items: [
+      { text: 'ClickHouse Schema Migration System', done: false },
+      { text: 'Classification Delta/Diff at Scale', done: false },
+      { text: 'Security Audit', done: false },
+    ],
+  },
+  {
+    phase: 'Beta 1 Release',
+    status: 'Future',
+    badgeClass: 'bg-brand-light',
+    description: 'Stable public release once the security audit closes and the alpha series completes.',
+    items: [
+      { text: 'Address Audit Findings', done: false },
+      { text: 'Final Release Candidate Testing', done: false },
+      { text: 'Public Beta Announcement', done: false },
     ],
   },
 ];
 
 const Roadmap = () => {
+  const [showCompleted, setShowCompleted] = useState(false);
+
+  const completedPhases = roadmapPhases.filter((p) => p.status === 'Complete');
+  const upcomingPhases = roadmapPhases.filter((p) => p.status !== 'Complete');
+  const visiblePhases = showCompleted ? roadmapPhases : upcomingPhases;
+
   return (
     <section id="roadmap" style={{ backgroundColor: 'var(--bg-secondary)' }}>
       <Container>
         <h2 className="section-title">Our Roadmap</h2>
         <p className="section-subtitle">
-          This project has been in development since 2024 and is currently pre-alpha software under heavy development. The core pipeline, decentralized archiving, live P2P distribution, and archive replication are complete. Three nodes across New Zealand and Australia are successfully replicating 93,000+ archives and live sensor data via P2P with zero failures. Current work focuses on robustness testing, CGNAT support for home users, and operator documentation before the first Alpha release. The vision remains to build toward a fully decentralized, community-owned network that anyone can contribute to, without paywalls or judgement.
+          This project has been in development since 2024 and is currently pre-alpha software. The core pipeline, decentralised archiving, live P2P distribution, archive replication, robustness hardening, and the full contributor documentation suite are now complete. Three stations across New Zealand and Australia replicate 93,000+ archives with a measured zero disconnects per hour across the P2P network. The remaining work before Beta is grouped into four focused alphas — an initial announcement, Home Assistant integration, hardware and networking, then scale and security prep. The vision remains to build toward a fully decentralised, community-owned network that anyone can contribute to, without paywalls or judgement.
         </p>
+        <div className="text-center mb-4">
+          <Button
+            variant="outline-secondary"
+            size="sm"
+            onClick={() => setShowCompleted(!showCompleted)}
+          >
+            {showCompleted
+              ? `− Hide ${completedPhases.length} completed phases`
+              : `+ Show ${completedPhases.length} completed phases`}
+          </Button>
+        </div>
         <Row>
-          {roadmapPhases.map((phase, index) => (
+          {visiblePhases.map((phase, index) => (
             <Col key={index} md={6} lg={3} className="d-flex align-items-stretch mb-4">
               <Card className="w-100">
                 <Card.Header className="d-flex justify-content-between align-items-center">
