@@ -59,8 +59,8 @@ const roadmapPhases = [
   },
   {
     phase: 'Phase 5: Robustness & Security',
-    status: 'In Progress',
-    badgeClass: 'bg-brand-medium',
+    status: 'Complete',
+    badgeClass: 'bg-brand',
     description: 'Hardening the P2P network for reliability, security, and real-world conditions.',
     items: [
       { text: 'Multi-Node Replication Testing (2 hosts verified)', done: true },
@@ -70,7 +70,7 @@ const roadmapPhases = [
       { text: 'Contribution Tiers & Deployment Profiles', done: true },
       { text: 'Test Internet Replication via VPS (93K archives, AU↔NZ)', done: true },
       { text: 'P2P Classification Sharing Between Guardians', done: true },
-      { text: 'CGNAT & Dynamic IP Testing', done: false },
+      { text: 'libp2p Stream Reset & Teardown Cleanup (~30/hr → 0/hr disconnects; upstream PRs filed)', done: true },
     ],
   },
   {
