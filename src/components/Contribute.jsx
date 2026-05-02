@@ -30,13 +30,6 @@ const sensorContributions = [
     buttonClass: 'btn-brand-outline',
     href: 'https://docs.wesense.earth/getting-started/home-assistant',
   },
-  {
-    title: 'Hardware Reference',
-    text: 'Working out which board to build on, or designing your own enclosure? The hardware reference covers supported ESP32 boards (T-Beam, C3, C6, S3), enclosure designs, and full sensor specifications.',
-    buttonText: 'Hardware Docs',
-    buttonClass: 'btn-brand-outline',
-    href: 'https://docs.wesense.earth/hardware/board-configurations',
-  },
 ];
 
 const networkContributions = [
@@ -123,13 +116,16 @@ const Contribute = () => {
             </Col>
           ))}
         </Row>
+        <p className="mb-0" style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+          Reference: <a href="https://docs.wesense.earth/getting-started/recommended-sensors" target="_blank" rel="noopener noreferrer" className="link-brand">Recommended Sensors</a> &middot; <a href="https://docs.wesense.earth/hardware/board-configurations" target="_blank" rel="noopener noreferrer" className="link-brand">Hardware &amp; Boards</a>
+        </p>
         <h3 className="mb-3 mt-4" style={{ color: 'var(--text-primary)' }}>Strengthen the Network</h3>
         <p style={{ color: 'var(--text-secondary)' }}>
           Sensors collect the data, but nodes are the infrastructure that stores, replicates, and serves it. Running a node is one of the most impactful ways to contribute.
         </p>
         <Row>
           {networkContributions.map((item, index) => (
-            <Col key={index} md={6} lg={4} className="mb-4">
+            <Col key={index} md={6} lg={3} className="mb-4">
               <Card className="h-100">
                 <Card.Body className="d-flex flex-column">
                   <Card.Title as="h4">{item.title}</Card.Title>
