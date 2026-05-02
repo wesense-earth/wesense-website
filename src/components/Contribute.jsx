@@ -5,39 +5,53 @@ const sensorContributions = [
   {
     title: 'Run a Meshtastic Node',
     text: 'Add environmental sensors to a Meshtastic device and contribute data through the mesh network. Your readings travel across the mesh and into the WeSense network automatically.',
-    buttonText: 'View on Wiki',
+    buttonText: 'Read the Docs',
     buttonClass: 'btn-brand-outline',
     href: 'https://docs.wesense.earth/getting-started/meshtastic-node',
   },
   {
     title: 'Build a Meshtastic Gateway',
     text: "Share your neighbourhood's environmental telemetry with the world. A gateway bridges your local mesh to the internet, contributing data from nearby nodes that aren't connected themselves.",
-    buttonText: 'View on Wiki',
+    buttonText: 'Read the Docs',
     buttonClass: 'btn-brand-outline',
     href: 'https://docs.wesense.earth/getting-started/meshtastic-gateway',
   },
   {
     title: 'Build a WeSense Node',
-    text: 'Deploy a dedicated ESP32 sensor for high-frequency environmental monitoring. Reports every 5 minutes over WiFi or LoRaWAN with temperature, humidity, pressure, CO2, PM2.5, and more.',
-    buttonText: 'View on Wiki',
+    text: 'Deploy a dedicated ESP32 sensor for high-frequency environmental monitoring. Reports every 5 minutes over WiFi or LoRaWAN with temperature, humidity, pressure, CO2, PM2.5, and more. Step-by-step guide covers hardware, firmware setup, configuration, management, and updates.',
+    buttonText: 'Read the Docs',
     buttonClass: 'btn-brand-outline',
     href: 'https://docs.wesense.earth/getting-started/build-wesense-node',
   },
   {
     title: 'Home Assistant / Ecowitt',
     text: 'Already running Home Assistant or Ecowitt devices? Connect your existing environmental sensors to the WeSense network with our ingester plugin and contribute data from hardware you already own.',
-    buttonText: 'View on Wiki',
+    buttonText: 'Read the Docs',
     buttonClass: 'btn-brand-outline',
     href: 'https://docs.wesense.earth/getting-started/home-assistant',
+  },
+  {
+    title: 'Hardware Reference',
+    text: 'Working out which board to build on, or designing your own enclosure? The hardware reference covers supported ESP32 boards (T-Beam, C3, C6, S3), enclosure designs, and full sensor specifications.',
+    buttonText: 'Hardware Docs',
+    buttonClass: 'btn-brand-outline',
+    href: 'https://docs.wesense.earth/hardware/board-configurations',
   },
 ];
 
 const networkContributions = [
   {
     title: 'Run a Regional Node',
-    text: 'Store and replicate data for your country or region. Your node archives sensor data in open Parquet format and serves it to the P2P network, so no single point of failure can lose the data.',
+    text: 'Replicate data for a single region or city — for example, Wellington or Auckland. Smallest scope, easiest to host on a Raspberry Pi or small VPS, and ideal for community groups focused on their own area.',
     buttonText: 'Station Guide',
     buttonClass: 'btn-brand',
+    href: 'https://docs.wesense.earth/station-operators/operate-a-station',
+  },
+  {
+    title: 'Run a Country Node',
+    text: 'Replicate every reading from your country. The most common scope for serious operators — broad enough to be useful as a national mirror, modest enough to run on a single mid-tier server.',
+    buttonText: 'Station Guide',
+    buttonClass: 'btn-brand-outline',
     href: 'https://docs.wesense.earth/station-operators/operate-a-station',
   },
   {
@@ -59,10 +73,10 @@ const networkContributions = [
 const otherContributions = [
   {
     title: 'Contribute Code',
-    text: 'Are you a developer? We need expertise across the stack, from firmware for new sensors, to backend services, to beautiful frontend visualizations.',
-    buttonText: 'View on GitHub',
+    text: 'Are you a developer? We need expertise across the stack — firmware for new sensors, Python ingesters for new data sources, backend services, and frontend visualisations. The contributor guide maps every repo and the areas that most need help.',
+    buttonText: 'Contributor Guide',
     buttonClass: 'btn-brand',
-    href: 'https://github.com/wesense-earth',
+    href: 'https://docs.wesense.earth/developers/contributing-code',
   },
   {
     title: 'Contribute Data Science',

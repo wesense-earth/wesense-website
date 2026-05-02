@@ -21,6 +21,7 @@ const Hero = () => {
           <p>
             <Button href="https://map.wesense.earth/#map&zoom=3" target="_blank" rel="noopener noreferrer" className="btn-brand-outline my-2 mx-1">Live Map <small style={{ fontSize: '0.75em', opacity: 0.7 }}>(pre-alpha)</small></Button>
             <Button href="https://map.wesense.earth" target="_blank" rel="noopener noreferrer" className="btn-brand-outline my-2 mx-1">Live Dashboard <small style={{ fontSize: '0.75em', opacity: 0.7 }}>(pre-alpha)</small></Button>
+            <Button href="https://docs.wesense.earth/getting-started/quick-start" target="_blank" rel="noopener noreferrer" className="btn-brand my-2 mx-1">Quick Start</Button>
             <Button href="#mission" className="btn-brand-outline my-2 mx-1">Our Mission</Button>
             <Button href="https://github.com/wesense-earth" target="_blank" rel="noopener noreferrer" className="btn-brand-outline my-2 mx-1">Get Involved</Button>
           </p>
