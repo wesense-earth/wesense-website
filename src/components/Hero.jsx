@@ -6,11 +6,8 @@ const Hero = () => {
     <Container fluid className="py-5 text-center" id="home" style={{ backgroundColor: 'var(--bg-secondary)' }}>
       <Row className="py-lg-5">
         <Col lg={6} md={8} className="mx-auto">
-          <h1 className="fw-bold">
-            Sense Your World.
-          </h1>
           <h1 className="fw-bold mb-4">
-            Share Our Planet.
+            Sense Your World.<br />Share Our Planet.
           </h1>
           <p className="lead" style={{ color: 'var(--text-muted)' }}>
             Join the peer-to-peer, community-owned environmental sensor network. WeSense.earth empowers everyone to monitor their local environment and contribute to a global, transparent, and permanent record of our planet's health.

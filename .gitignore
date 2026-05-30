@@ -54,6 +54,7 @@ npm-debug.log
 # Build outputs
 build/
 dist/
+dist-server/
 
 # Arduino/PlatformIO
 .pio/

@@ -14,11 +14,14 @@ import HowItWorks from './components/HowItWorks';
 import Roadmap from './components/Roadmap';
 
 function App() {
-  // Initialize theme from localStorage or default to 'light'
-  const [theme, setTheme] = useState(() => {
+  // Default to 'light' so server-prerendered and first client render match.
+  const [theme, setTheme] = useState('light');
+
+  // Load the saved theme after mount (localStorage is unavailable during prerender).
+  useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
-    return savedTheme || 'light';
-  });
+    if (savedTheme) setTheme(savedTheme);
+  }, []);
 
   // Apply theme to document and save to localStorage
   useEffect(() => {
