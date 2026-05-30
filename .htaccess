@@ -2,6 +2,10 @@
   RewriteEngine On
   RewriteBase /
 
+  # Canonical host: redirect www → apex (matches <link rel="canonical">)
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+
   # Mastodon federation discovery for split-domain setup
   RewriteCond %{REQUEST_URI} ^/.well-known/webfinger
   RewriteRule .* https://mastodon.wesense.earth%{REQUEST_URI} [R=301,L,QSA]
