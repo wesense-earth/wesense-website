@@ -8,6 +8,7 @@ RUN npm ci
 
 COPY index.html ./
 COPY vite.config.js ./
+COPY prerender.js ./
 COPY eslint.config.js ./
 COPY public/ ./public/
 COPY src/ ./src/
