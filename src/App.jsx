@@ -20,6 +20,8 @@ function App() {
   // Load the saved theme after mount (localStorage is unavailable during prerender).
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
+    // Read after mount so the prerendered HTML and first client render match.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (savedTheme) setTheme(savedTheme);
   }, []);
 

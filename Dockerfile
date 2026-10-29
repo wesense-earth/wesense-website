@@ -1,5 +1,7 @@
 # Stage 1: Build the React app
-FROM node:22-alpine AS build
+# Runs on the build machine's own architecture: the output is static files, and
+# vite 8's native bundler (rolldown) has no 32-bit ARM binary for Alpine.
+FROM --platform=$BUILDPLATFORM node:22-alpine AS build
 
 WORKDIR /app
 
