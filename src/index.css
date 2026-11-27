@@ -246,6 +246,11 @@ section {
    ============================================ */
 
 .navbar {
+  /* Header shared with the map and docs.wesense.earth: 64 px tall, 24 px
+     sides, 32 px leaf mark, DM Sans wordmark and menu */
+  min-height: 64px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   background-color: var(--navbar-bg) !important;
   border-bottom: 1px solid var(--border-color);
   transition: background-color 0.3s ease, border-color 0.3s ease;
@@ -253,6 +258,7 @@ section {
 
 .navbar .nav-link {
   font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 14px;
   font-weight: 500;
   color: var(--text-color) !important;
   transition: color 0.2s ease;
@@ -263,6 +269,10 @@ section {
 }
 
 .navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  padding: 0;
   font-family: 'DM Sans', system-ui, sans-serif;
   font-weight: 700;
 }
@@ -270,21 +280,29 @@ section {
 /* Same wordmark as the map and docs.wesense.earth */
 .navbar-brand-name {
   margin-left: 10px;
-  font-size: 20px;
-  color: var(--text-color);
+  font-size: 18px;
+  line-height: 24px;
+  color: #2D6A4F; /* Canopy Green: the brand wordmark colour on light */
   letter-spacing: -0.01em;
+}
+
+[data-theme="dark"] .navbar-brand-name {
+  color: #52B788; /* Fern on dark */
 }
 
 /* App views (Dashboard, Map, Stats) first, as buttons like map.wesense.earth */
 .navbar .nav-app-links {
-  gap: 8px;
-  margin-left: 24px;
+  gap: 6px;
+  margin-left: 32px;
 }
 
 .navbar .nav-app-link {
+  display: flex;
+  align-items: center;
+  height: 32px;
   background-color: rgba(45, 106, 79, 0.08);
   border-radius: 4px;
-  padding: 6px 18px !important;
+  padding: 0 14px !important;
   color: var(--primary-color) !important;
   font-weight: 600;
 }
@@ -304,13 +322,13 @@ section {
 /* Then this site's sections, after a divider, as lighter text links */
 .navbar .nav-site-separator {
   color: var(--border-color);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
-  margin: 0 8px 0 16px;
+  margin: 0 12px 0 16px;
 }
 
 .navbar .nav-site-links .nav-link {
-  font-size: 15px;
+  padding: 0 9px;
   opacity: 0.8;
 }
 
