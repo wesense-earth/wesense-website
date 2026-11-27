@@ -267,6 +267,14 @@ section {
   font-weight: 700;
 }
 
+/* Same wordmark as the map and docs.wesense.earth */
+.navbar-brand-name {
+  margin-left: 10px;
+  font-size: 20px;
+  color: var(--text-color);
+  letter-spacing: -0.01em;
+}
+
 /* App views (Dashboard, Map, Stats) first, as buttons like map.wesense.earth */
 .navbar .nav-app-links {
   gap: 8px;
