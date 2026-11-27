@@ -267,6 +267,60 @@ section {
   font-weight: 700;
 }
 
+/* App views (Dashboard, Map, Stats) first, as buttons like map.wesense.earth */
+.navbar .nav-app-links {
+  gap: 8px;
+  margin-left: 24px;
+}
+
+.navbar .nav-app-link {
+  background-color: rgba(45, 106, 79, 0.08);
+  border-radius: 4px;
+  padding: 6px 18px !important;
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+.navbar .nav-app-link:hover {
+  background-color: rgba(45, 106, 79, 0.16);
+}
+
+[data-theme="dark"] .navbar .nav-app-link {
+  background-color: rgba(82, 183, 136, 0.12);
+}
+
+[data-theme="dark"] .navbar .nav-app-link:hover {
+  background-color: rgba(82, 183, 136, 0.22);
+}
+
+/* Then this site's sections, after a divider, as lighter text links */
+.navbar .nav-site-separator {
+  color: var(--border-color);
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 8px 0 16px;
+}
+
+.navbar .nav-site-links .nav-link {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.navbar .nav-site-links .nav-link:hover {
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .nav-app-links {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  .navbar .nav-app-link {
+    margin-bottom: 4px;
+  }
+}
+
 /* ============================================
    Footer
    ============================================ */
