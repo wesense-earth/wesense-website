@@ -21,18 +21,15 @@ const SITE_LINKS = [
 ];
 
 const Header = ({ theme, toggleTheme }) => {
-  const logoSrc = theme === 'dark'
-    ? '/logos/logo-solid-dark.png'
-    : '/logos/logo-solid-light.png';
-
   return (
     <Navbar expand="lg" sticky="top" className="shadow-sm">
       <Container fluid className="px-4">
         <Navbar.Brand href="/" title="WeSense.earth home">
           <img
-            src={logoSrc}
+            src="/logos/logo-mark.png"
             alt=""
-            height="44"
+            width="32"
+            height="32"
             className="d-inline-block align-middle"
           />
           <span className="navbar-brand-name align-middle">WeSense</span>
