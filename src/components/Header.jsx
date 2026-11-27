@@ -10,6 +10,7 @@ const APP_LINKS = [
 ];
 
 const SITE_LINKS = [
+  { label: 'Home', href: '#home' },
   { label: 'Mission', href: '#mission' },
   { label: 'The Why', href: '#why' },
   { label: 'How It Works', href: '#how' },
