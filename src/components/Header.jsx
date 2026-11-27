@@ -31,10 +31,11 @@ const Header = ({ theme, toggleTheme }) => {
         <Navbar.Brand href="/" title="WeSense.earth home">
           <img
             src={logoSrc}
-            alt="WeSense.earth"
+            alt=""
             height="44"
             className="d-inline-block align-middle"
           />
+          <span className="navbar-brand-name align-middle">WeSense</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
